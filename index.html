@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smoothie Order Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Smoothie Order Form</h1>
+    <form id="smoothieForm">
+        <label for="flavor">Choose a flavor:</label>
+        <select id="flavor" name="flavor">
+            <option value="strawberry">Strawberry</option>
+            <option value="banana">Banana</option>
+            <option value="mango">Mango</option>
+            <option value="pineapple">Pineapple</option>
+        </select><br><br>
+        
+        <label for="size">Select size:</label>
+        <input type="radio" id="small" name="size" value="small">
+        <label for="small">Small</label>
+        <input type="radio" id="medium" name="size" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" id="large" name="size" value="large">
+        <label for="large">Large</label><br><br>
+
+        <label for="extras">Add extras:</label><br>
+        <input type="checkbox" id="protein" name="extras" value="protein">
+        <label for="protein">Protein Powder</label><br>
+        <input type="checkbox" id="greens" name="extras" value="greens">
+        <label for="greens">Greens</label><br>
+        <input type="checkbox" id="honey" name="extras" value="honey">
+        <label for="honey">Honey</label><br><br>
+
+        <button type="submit">Order</button>
+    </form>
+
+    <div id="smoothieOutput">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
